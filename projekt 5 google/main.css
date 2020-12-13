@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* GOOGLE FONT */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* TOP BAR */
+.header {
+    word-spacing: 10px;
+}
+.gmail {
+    vertical-align: middle;
+}
+.bilder {
+    vertical-align: middle;
+}
+.kvadrati img {
+    width: 17.5px;
+    vertical-align: middle;
+}
+.kvadrati :hover {
+    opacity: 0.55;
+    box-sizing: inherit;
+}
+#button {
+    background-color: rgb(68,134,248);
+    border: 0.5px solid blue;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-family: "Roboto";
+    vertical-align: middle;
+}
+#button:active {
+    background-color: rgb(61,121,222);
+    border-top: 0.5px solid darkblue;
+    border-bottom: 0.5px solid darkblue;
+}
+.header li {
+    display: inline;
+    color: black;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 350;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+}
+.header a:hover {
+    text-decoration: underline;
+    box-shadow: black;
+}
+.header ul {
+float: right;
+margin-right: 40px;
+margin-top: 25px;
+}
+.face {
+    margin: 0 auto;
+    width: 700px;
+    padding-top: 280px;
+    text-align: center;
+}
+.footer-3 li {
+    display: inline;
+}
+.bottom {
+    padding-top: 299px;
+}
+input {
+    border-radius: 20px;
+    height: 40px;
+    width: 550px;
+    border: 0.5px solid lightgray;
+}
+input:hover {
+    box-shadow: 0 0 1px 0.5px gray;
+}
+input:focus {
+    box-shadow: 0 0 1px 0.5px gray;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#suche {
+    height: 40px;
+    width: 150px;
+    background-color:rgb(244,244,244);
+    border-radius: 5px;
+    border: none;
+    color: black
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+#gluck {
+    height: 40px;
+    width: 150px;
+    background-color:rgb(244,244,244);
+    border-radius: 5px;
+    border: none;
+    color: black
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+#gluck:hover {
+    border: 0.5px solid#555555 ;
+    border-radius: 5px;
+}
+#suche:hover {
+    border: 0.5px solid#555555 ;
+    border-radius: 5px;
+}
+#gluck:active {
+    border:0.5px solid lightblue;
+    border-radius: 5px;
+}
+#suche:active {
+    border:0.5px solid lightblue;
+    border-radius: 5px;
+}
+#empty {
+    display: inline;
+    color: white;
+}
+.footer-1 {
+    font-family: "Roboto";
+    padding-top: 10px;
+}
+.footer-1 a {
+    color: blue;
+    text-decoration: none;
+}
+.footer-1 a:hover {
+    text-decoration: underline;
+}
+.footer-2 {
+    background-color: rgb(244,244,244);
+    border-top: 0.1px solid gray;
+    font-family: "Roboto";
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    text-align: justify;
+    font-weight: 300;
+    color: gray;
+}
+.footer-3 {
+    margin-top: 0px;
+    background-color:rgb(244,244,244);
+    padding-left: 28px;    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 0.2px solid gray;
+    border-bottom: 0.2px solid gray;
+    font-weight: 300;
+}
+.footer-3 a {
+    text-decoration: none;
+    color: black;
+}
+.footer-3 a:hover {
+    text-decoration: underline;
+}
+.footer-3 a:visited {
+    color: gray;
+}
+.footer-3 ul {
+    display: inline;
+    font-family: "Roboto";  
+}
+.ul2 {
+    text-align: right;
+    position: relative;
+    float: right;
+    padding-right: 30px;
+    background-color: lightgray;
+}
+input {
+    background-image: url(images/magnifier1.png);
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    background-size: 30px 30px;
+    background-position: 5px 5px;
+    width: 650px;
+}
+input:focus {
+    background-image: none;
+}
+#werbe {
+    margin-right: 25px;
+}
+#unternehmen {
+    margin-right: 25px;
+}
+#uber {
+    margin-right: 25px;
+}
+#wie {
+    margin-right: 750px;
+}
+#daten {
+    margin-right: 25px;
+}
+#nutzungsb {
+    margin-right: 25px;
+}

@@ -1,0 +1,433 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url("images/bckgrnd.png");
+        width: 100%;
+        height: 100%;
+        filter: blur(2px);
+        z-index: -1;
+}
+.header {
+    margin: 0% auto;
+    width: 80%;
+    object-fit: cover;
+    height: 200px;
+    border: 2px solid ivory;
+    background-image: url("images/back.png")
+     
+}
+.left {
+    display: inline-block;
+    width: 30%;
+    float: left;
+    background-image: url("images/bnnr.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: 2px solid white;
+}
+.right {
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    font-size: 70px;
+    font-family: "Finger Paint";
+    margin-top: 45px;
+    text-transform: uppercase;
+    padding-right: 25px;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px black;
+  }
+.squares {
+    margin-left: 1305px;
+    margin-top: 130px;
+}
+.square1 {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #990f02;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.square2     {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color:#1520A6;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.square3 {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #B008BB;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.square4 {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #FFD300;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.container {
+    width: 80%;
+    height: 627px;
+    margin: 0% auto;
+    background: linear-gradient(90deg, #BC5090, #FF6362 100%);
+    border: 2px solid white;
+    margin-top: 5px;
+}
+.floor {
+  margin: 0% auto;
+  width: 80%;
+  height: 100px;
+  background-image: url("images/back.png");
+  margin-top: 5px;
+  border: 2px solid ivory;
+}
+.main {
+  display: inline-block;
+  width: 60%;
+  border-right: 2px solid ivory;
+  height: 625px;
+  float: left;
+  padding-top: 30px;
+}
+.offer {
+  display: inline-block;
+  width: 40%;
+  height: 627px;
+  float: left;
+}
+.prvi li {
+  display: inline;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 35%;
+  margin-top: 75px;
+  margin-left: 60px;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.prvi li:hover {
+  transition: 0.5s;
+  scale: 1.25;
+  opacity: 0.8;
+}
+.katalog {
+  background-image: url("images/katalog.png");
+}
+.palete {
+  background-image: url("images/palete.png");
+}
+.drugi li {
+  display: inline;
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 35%;
+  margin-top: 75px;
+  margin-left: 60px;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.drugi li:hover {
+  transition: 0.5s;
+  scale: 1.25;
+  opacity: 0.8  ;
+}
+.multimedia {
+  background-image: url("images/multimedia.png");
+}
+.certifikati {
+  background-image: url("images/zertifikat.png");
+}
+.nav-bar li {
+  display: inline;
+  font-family: "Lato";
+  margin-left: 5px;
+  font-size: 30px;
+  margin-left: 70px;
+}
+.rainbow{
+  background-image:     linear-gradient(
+    to right, 
+    #E7484F,
+    #E7484F 16.65%,
+    #F68B1D 16.65%,
+    #F68B1D 33.3%,
+    #FCED00 33.3%,
+    #FCED00 49.95%,
+    #009E4F 49.95%,
+    #009E4F 66.6%,
+    #00AAC3 66.6%,
+    #00AAC3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #E7484F 100%
+   
+   
+   
+  );
+  color: black;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+.rainbow-5:hover{
+    background-image:     linear-gradient(
+       to right, 
+       #E7484F,
+       #E7484F 16.65%,
+       #F68B1D 16.65%,
+       #F68B1D 33.3%,
+       #FCED00 33.3%,
+       #FCED00 49.95%,
+       #009E4F 49.95%,
+       #009E4F 66.6%,
+       #00AAC3 66.6%,
+       #00AAC3 83.25%,
+       #732982 83.25%,
+       #732982 100%,
+       #E7484F 100%
+      
+      
+      
+     );
+   animation:slidebg 2s linear infinite;
+ }
+ 
+ 
+ @keyframes slidebg {
+   to {
+     background-position:20vw;
+   }
+}
+.squares span:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.slider {
+  box-shadow: inset 0 0 0px hsla(0,0%,0%,.2),
+              0 3px 1px hsla(0,0%,100%,.75),
+              0 -1px 1px 2px hsla(0,0%,0%,.1);
+}
+
+/* Frame */
+
+.slider:before {
+  box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,.2),
+              inset 0 -2px 1px hsla(0,0%,0%,.4),
+              0 5px 50px hsla(0,0%,0%,.25),
+              0 20px 20px -15px hsla(0,0%,0%,.2),
+              0 30px 20px -15px hsla(0,0%,0%,.15),
+              0 40px 20px -15px hsla(0,0%,0%,.1);
+  content: '';
+  z-index: -1;
+}
+
+/* Mat */
+
+.slider:after {
+  bottom: -1.5em;
+  box-shadow: 0 0px 0px hsla(0,0%,100%,.2),
+              0 0px 0px 0px hsla(0,0%,0%,.4),
+              inset 0 0px 0px 0px hsla(0,0%,0%,.2),
+              inset 0 0px 0px 0px hsla(0,0%,0%,.2),
+              inset 0 0px 0px 0px hsla(0,0%,0%,.1);
+  content: '';
+  z-index: -1;
+}
+
+/* Slides */
+
+.slider li {
+  border: 2px solid ivory;
+  list-style:none;
+  position: absolute;
+}
+.slider input {
+  display: none;
+}
+
+/* Navigation */
+
+.slider label {
+  background-color: #111;
+  background-image: linear-gradient(transparent, hsla(0,0%,0%,.25));
+  border: .2em solid transparent;
+  bottom: .5em;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: .5em;
+  left: 24em;
+  opacity: 0;
+  position: absolute;
+  transition: .25s;
+  width: .5em;
+  visibility: hidden;
+  z-index: 10;
+}
+.slider label:after {
+  border-radius: 100%;
+  bottom: -.2em;
+  box-shadow: inset 0 0 0 .2em #111,
+              inset 0 2px 2px #000,
+              0 1px 1px hsla(0,0%,100%,.25);
+  content: '';
+  left: -.2em;
+  position: absolute;
+  right: -.2em;
+  top: -.2em;
+}
+.slider:hover label {
+  opacity: 1;
+  visibility: visible;
+}
+.slider input:checked + label {
+  background-color: #fff;
+}
+.slider:hover li:nth-child(1) label {
+  left: .5em;
+}
+.slider:hover li:nth-child(2) label {
+  left: 2em;
+}
+.slider:hover li:nth-child(3) label {
+  left: 3.5em;
+}
+.slider:hover li:nth-child(4) label {
+  left: 5em;
+}
+
+/* Images */
+
+.slider img {
+  height: 400px;
+  opacity: 0;
+  transition: .25s;
+  width: 600px;
+  vertical-align: top;
+  visibility: hidden;
+}
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.slideshow {
+  height: 400px;
+  width: 600px;
+  margin: 0% auto;
+  margin-top: 70px;
+  background-color: black;
+}
+.floor {
+  padding-top: 43px;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 30px;
+  color: #990f02;
+  font-family: "Bauhaus 93";
+}
+.footer1 a {
+  text-decoration: none;
+  color: #990f02;
+}
+.footer1 a:hover {
+  transition: 0.2;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px 2px black;
+}
+.footer1 {
+  display: inline;
+}
+.footer2 {
+  display: inline;
+}

@@ -1,0 +1,288 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+    background-color: white;
+}
+.cntnr1 {
+    margin: 0 auto;
+    width: 960px;
+    position: relative;
+}
+.bnnr {
+    height: 100px;
+    background-image: url("images/bnnr1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0.1px dotted black;
+    border-radius: 10px;
+}
+.tphlf {
+    background-color: #9be5aa;
+    position: relative;
+    height: 100px;
+    border-radius: 10px;
+    border-bottom: 1px solid #FAFAFA;    
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.bttmhlf {
+    background-color: #9be5aa;
+    position: relative;
+    height: 100px;
+    border-radius: 10px;
+    border-top: 1px solid #FAFAFA;
+    border-bottom: 1px solid darkslategrey;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.bnnrtxt {
+    position: absolute;
+    text-align: center;
+    margin-top: -135px;
+    font-size: 42px;
+    width: 960px;
+    color: #FAFAFA;
+    -webkit-text-stroke: 0.5px darkslategrey;
+    text-transform: uppercase;
+    font-family: "Lato";
+}
+a {
+    text-decoration: none;
+    color: #FAFAFA;
+    opacity: 0.5;
+}
+a:hover {
+    color: black;
+    transition: 2s;
+}
+.cntnr2 {
+    margin: 0 auto;
+    width: 960px;
+    margin-top: 10px;
+}
+.hm {
+    float: left;
+    width: 50%;
+    background-color: black;
+    background-image: url("images/hm.png");
+    height: 300px;
+    background-size: fill;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Lato";
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    color: #9be5aa;
+    -webkit-text-stroke: 0.5px black;
+}
+.hm:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+.bts {
+    float: left;
+    width: 50%;
+    background-color: black;
+    background-image: url("images/bts.png");
+    height: 300px;
+    background-size: contain;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Lato";
+    border: 1px solid black;
+    color: #9be5aa;
+    -webkit-text-stroke: 0.5px darkslategrey;
+}
+.bts:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+.srvcs {
+    float: left;
+    width: 50%;
+    background-color: black;
+    background-image: url("images/srvcs.png");
+    height: 300px;
+    background-size: contain;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Lato";
+    border: 1px solid black;
+    color: #9be5aa;
+    -webkit-text-stroke: 0.5px darkslategrey;
+}
+.srvcs:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+.cncts {
+    float: left;
+    width: 50%;
+    background-color: black;
+    background-image: url("images/cncts.png");
+    height: 300px;
+    background-size: contain;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Lato";
+    border: 1px solid black;
+    color: #9be5aa;
+    -webkit-text-stroke: 0.5px darkslategrey;
+}
+.cncts:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+}
+p { font-size: 18px
+}
+#home {
+    color: #9be5aa;
+    -webkit-text-stroke: 0.5px darkslategrey;
+    font-weight: bolder;
+    opacity: 1;
+}
+#home:hover {
+    color:darkslategrey;
+    -webkit-text-stroke: 0.5px #9be5aa;
+}
+#aboutus {
+    color: #9be5aa;
+    -webkit-text-stroke: 0.5px darkslategrey;
+    font-weight: bolder;
+    opacity: 1;
+}
+#aboutus:hover {
+    color:darkslategrey;
+    -webkit-text-stroke: 0.5px #9be5aa;
+}
+#contacts {
+    color: #9be5aa;
+    -webkit-text-stroke: 0.5px darkslategrey;
+    font-weight: bolder;
+    opacity: 1;
+}
+#contacts:hover {
+    color:darkslategrey;
+    -webkit-text-stroke: 0.5px #9be5aa;
+}
+#services {
+    color: #9be5aa;
+    -webkit-text-stroke: 0.5px darkslategrey;
+    font-weight: bolder;
+    opacity: 1;
+}
+#services:hover {
+    color:darkslategrey;
+    -webkit-text-stroke: 0.5px #9be5aa;
+}
+.footer {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background:  #9be5aa;
+    color: black;
+    font-weight: lighter;
+    text-align: right;
+    letter-spacing: -1px;
+    text-decoration: underline;
+    text-transform: lowercase;
+    word-spacing: -3px;
+}
+#footie {
+    text-decoration: none;
+    color: black;
+    opacity: 0.3;
+}
+#footie:Hover {
+    opacity: 1.0;
+}
+#copy {
+    text-decoration: none;
+}
+#mini {
+    background-image: url("images/zahn.png");
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

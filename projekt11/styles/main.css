@@ -1,0 +1,299 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  background-image: url("images/bluegirl1.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 5em;
+  text-align: center;
+}
+.wrapper div {
+  display: inline-block;
+}
+.wrapper i {
+  font-size: 2.5em;
+  position: ;
+}
+.logo {
+  position: relative;
+  left: 19%;
+  font-family: "Krona One";
+  padding: 1em;
+  color: #97C3A6;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px black;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to right,  #74b3ce, #3a7ca5);
+  width: 61em;
+  height: 2em;
+  left: -380%;
+  top: 35%;
+  border-radius: 10px;
+}
+.nav {
+  position: relative;
+  left: 20%;
+  padding: 1em;
+  font-family: "Lato";
+  top: -2%;
+  font-weight: 200;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+.nav div {
+  margin-left: 1.5em;
+  letter-spacing: 1em;
+  text-transform: uppercase;
+}
+.nav div:hover {
+  color: #97C3A6;
+}
+.nav div::before {
+  content: "//";
+  opacity: 1;
+  transition: 300ms;
+}
+.container button {
+  font-family: "Roboto";
+  color: aliceblue;
+  transition: 250ms;
+}
+.container button:hover {
+  transition: 250ms;
+}
+#trends {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #74b3ce;
+  border: 2px solid lightblue;
+}
+#trends::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border: 2px solid lightblue;
+  transform: scale(0, 0);
+  transition: 250ms;
+}
+#trends:hover::before {
+border: 2px solid lightblue;
+transform: scale(1, 1);
+}
+#trends::after {
+  content: "_T R E N D S_";
+  font-family: "Lato";
+  position: absolute;
+  height: 12em;
+  width: 50em;
+  top: -115%;
+  left: 500%;
+  transform: skew(10deg) scale(0,0);
+  border: 0.5px solid #74b3ce;
+  border-radius: 10px;
+  color: black;
+}
+
+#trends:focus::after {
+  transform: skew(10deg) scale(1,1);
+  transition: 750ms;
+}
+#projects {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #3a7ca5;
+  border: 2px solid lightblue;
+}
+#projects::after {
+  content: "O U R _ P R O J E C T S";
+  position: absolute;
+  font-family: "Lato";
+  height: 12em;
+  width: 50em;
+  top: -100%;
+  left: 575%;
+  transform: skew(10deg) scale(0,0);
+  border: 0.5px solid #3a7ca5;
+  border-radius: 10px;
+  color: black;
+  
+}
+#projects:hover::before {
+  border: 2px solid lightblue;
+  transform: scale(1, 1);
+  }
+#projects::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border: 2px solid lightblue;
+  transform: scale(0, 0);
+  transition: 250ms;
+}
+#projects:focus::after {
+  transform: skew(10deg) scale(1,1);
+  transition: 750ms;
+}
+#history {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #0d6196;
+  border: 2px solid lightblue;
+}
+#history::after {
+  content: "T H E _ H I S T O R Y _ O F _ D E V I A N T _ D E S I G N";
+  position: absolute;
+  font-family: "Lato";
+  height: 12em;
+  width: 50em;
+  top: -85%;
+  left: 650%;
+  transform: skew(10deg) scale(0,0);
+  border: 0.5px solid #0d6196;
+  border-radius: 10px;
+  color: black;
+}
+#history:focus::after {
+  transform: skew(10deg) scale(1,1);
+  transition: 750ms;
+}
+#history:hover::before {
+  border: 2px solid lightblue;
+  transform: scale(1, 1);
+  }
+#history::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: 2px solid lightblue;
+    transform: scale(0, 0);
+    transition: 250ms;
+  }
+  .socmedia {
+    position: absolute;
+    display: block;
+    bottom: 0%;
+    right: 5%;
+    font-size: 5em;
+    border-bottom: 5px solid lightblue;
+    border-right: 5px solid lightblue;
+    border-radius: 5px;
+    color: #97C2A6;
+    padding-right: 0.25em;
+  }
+  .socmedia i {
+    margin-left: 0.25em;
+    transition: 250ms;
+    -webkit-text-stroke: 0.5px black;
+  }
+  .socmedia i:hover {
+    color: black;
+    transition: 250ms;
+    opacity: 0.5;
+    -webkit-text-stroke: 0.5px lightblue;
+  }

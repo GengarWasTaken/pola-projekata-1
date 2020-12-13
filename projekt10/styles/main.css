@@ -1,0 +1,257 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* BANNER BANNER BANNER BANNER BANNER BANNER 
+BANNER BANNER BANNER BANNER BANNER BANNER */
+.banner {
+  width: 100%;
+  height: 8em;
+  background-image: url("images/banner.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid coral;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner i {
+  color: bisque;
+  z-index: 3;
+  font-size: 5em;
+  cursor: pointer;
+  -webkit-text-stroke: 1px bisque;
+  transform: scale (1, 0);
+  transition: ease-in 300ms;
+  opacity: 0;
+}
+.banner i:hover {
+  font-size: 6em;
+  background: -webkit-linear-gradient(coral, orange, brown);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition:  ease-in 300ms;
+  transform: scale (1, 1);
+}
+.banner:hover i {
+  opacity: 1;
+}
+.banner::before {
+  content: "// Visit New York";
+  display: block;
+  margin: 0% auto;
+  color: bisque;
+  text-align: justify;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  opacity: 1;
+  position: absolute;
+  font-size: 3em;
+  font-family: "Roboto";
+  font-weight: 200;
+  opacity: 0;
+  transition: ease-in 300ms;
+  z-index: 2;
+  cursor: pointer;
+  letter-spacing: 0.25em;
+}
+.banner:hover::before {
+  opacity: 1;
+  transition: ease-in 300ms;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  top: 0.3em;
+  bottom: 0.3em;
+  right: 0.25em;
+  left: 0.25em;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  border-bottom: 1px solid bisque;
+  border-top: 1px solid bisque;
+  transition: ease-out 300ms;
+  transform: scale(1, 0);
+  background-color: orange;
+  border: 1px;
+}
+.banner:hover::after {
+  opacity: 0.5;
+  transition: ease-out 300ms;
+  transform: scale(1, 1);
+}
+/* FACE FACE FACE FACE FACE FACE FACE FACE
+FACE FACE FACE FACE FACE FACE FACE FACE */
+.container {
+  position: relative;
+  margin: 0% auto;
+  width: 60%;
+  top: 2em;
+  background: black;
+  height: 48.5em;
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container h2 {
+  margin-left: 0.75em;
+  line-height: 2.5em;
+  color: #C29200;
+  font-family: "Roboto";
+  font-size: 2.25em;
+  font-weight: 200;
+  -webkit-text-stroke: 0.5px bisque;
+}
+.cards div {
+  display: inline-block;
+  width: 30%;
+  float: left;
+  height: 30em;
+  line-height: 2em;
+  text-align: justify;
+  margin: 0% auto;
+  padding: 0.5em;
+  font-family: "Roboto";
+  margin-left: 1.8em;
+  color: bisque;
+  border: 2px solid #c29200;
+  background-color: orange;
+  transition: 250ms;
+  opacity: 0.7;
+}
+.cards div:hover {
+  transform: scale(1.25);
+  transition: 250ms;
+  opacity: 0.9;
+}
+.cards div:hover #landscape1 {
+  transform: scale(1);
+}
+.cards div:hover #landscape2 {
+  transform: scale(1);
+}
+.cards div:hover #landscape3 {
+  transform: scale(1);
+}
+.cards h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.cards h5 {
+  font-size: 1em;
+  font-weight: 200;
+}
+.cards p {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+#landscape1 {
+  display: block;
+  margin-left: 0px;
+  width: 100%;
+  height: 35%;
+  background-image: url("images/manhattan.png");
+  background-size: 100% 100%;
+}
+#landscape2 {
+  display: block;
+  margin-left: 0px;
+  width: 100%;
+  height: 35%;
+  border: 0px;
+  background-image: url("images/queens.png");
+  background-size: 100% 100%;
+}
+#landscape3 {
+  display: block;
+  margin-left:  0px;
+  width: 100%;
+  height: 35%;
+  border: 0px;
+  background-image: url("images/midtown.png");
+  background-size: 100% 100%;
+}
+body {
+  background-color: #343434;
